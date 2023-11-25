@@ -8,8 +8,7 @@ def get_user_data(str):
             user_data = input(str)
             if len(user_data):
                 return user_data
-            else:
-                raise Exception
+            raise Exception
         except:
             print('Це поле не може бути пустим')
 
