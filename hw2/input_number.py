@@ -26,7 +26,7 @@ print(
     'одиниці:', num_of_units, '\n',
     'десятки:', num_of_tens, '\n',
     'сотні:', num_of_hundreds, '\n',
-    'тисячі:', num_of_hundreds, '\n',
+    'тисячі:', num_of_thousands, '\n',
     'десятки тисяч:', num_of_tens_of_thousands, '\n',
     'трійок у числі:', num_of_3, '\n',
     'шісток у числі:', num_of_6
