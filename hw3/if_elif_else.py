@@ -10,7 +10,7 @@ def get_year():
             print('The year must be an integer')
 
 
-def is_leep_year(year):
+def is_leap_year(year):
     if not year % 400:
         return True
     elif not year % 100:
@@ -23,7 +23,7 @@ def is_leep_year(year):
 
 def check_year(year):
     if 1900 < year < 1_000_000:
-        if is_leep_year(year):
+        if is_leap_year(year):
             print(f'{year} is a leap year')
         else:
             print(f'{year} is not a leap year')
