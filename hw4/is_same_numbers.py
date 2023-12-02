@@ -1,4 +1,4 @@
-def get_number():
+def get_user_input():
     user_input = ''
     while not user_input:
         try:
@@ -21,5 +21,5 @@ def find_same_numbers_by_loop(str):
     return False
 
 
-str_with_numbers = get_number()
+str_with_numbers = get_user_input()
 print('It has duplicates:', find_same_numbers_by_loop(str_with_numbers))
