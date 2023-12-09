@@ -1,9 +1,5 @@
-# test_list = [1,2,3,4,5,6,7,8,9]
-
-# test_str = 'str'
-
 def get_user_input():
-    return input('Type a few characters:')
+    return input('Type a few characters: ')
 
 
 def handle_user_input(data):
@@ -36,12 +32,18 @@ def cut_start_end(lst, start=2, end=2):
     return lst[start:-end]
 
 
-def show_results(data):
-    print('initial list: ', data)
-    print('reverse: ', reverse(data))
-    print('last 5 elements: ', get_last_elements(data))
-    print('even indexes: ', get_even_idxs(data))
-    print('without 2 items from start and end: ', cut_start_end(data))
+def set_same_elements(lst, num_elements_from_end=5):
+    lst[0:num_elements_from_end] = get_last_elements(lst, num_elements_from_end)
+    return lst
+
+
+def show_results(lst):
+    print('initial list: ', lst)
+    print('reversed list: ', reverse(lst))
+    print('last 5 elements: ', get_last_elements(lst))
+    print('even indexes: ', get_even_idxs(lst))
+    print('without 2 items from start and end: ', cut_start_end(lst))
+    print('the same start and end: ', set_same_elements(lst))
 
 
 data = get_user_input()
