@@ -2,6 +2,9 @@ import random
 
 
 matrix = []
+DEFAULT_LENGTH = 5
+RANDOM_FROM = 1
+RANDOM_TO = 100
 
 
 def get_user_input():
@@ -17,11 +20,11 @@ def get_user_input():
             user_input = ''
 
 
-def fill_matrix(matrix: list, size=5):
+def fill_matrix(matrix: list, size=DEFAULT_LENGTH):
     for row in range(size):
         lst = []
         for col in range(size):
-            lst.append(random.randint(10, 99))
+            lst.append(random.randint(RANDOM_FROM, RANDOM_TO))
         matrix.append(lst)
     return matrix
 
