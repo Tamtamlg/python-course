@@ -3,8 +3,8 @@ import random
 
 matrix = []
 DEFAULT_LENGTH = 5
-RANDOM_FROM = 1
-RANDOM_TO = 100
+RANDOM_FROM = 10
+RANDOM_TO = 99
 
 
 def get_user_input():
