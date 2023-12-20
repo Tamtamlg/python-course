@@ -1,4 +1,4 @@
-from utils import get_data_from_file
+from utils import get_data_from_file_as_string
 
 
 GAP = 5
@@ -35,7 +35,7 @@ def print_data_as_table(rows: list[str], max_items_length):
         print(result_str)
 
 
-data = get_data_from_file('data_2.csv')
+data = get_data_from_file_as_string('data_2.csv')
 rows = data.split('\n')
 max_items_length = get_max_items_length(rows)
 print_data_as_table(rows, max_items_length)
