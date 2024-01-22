@@ -3,7 +3,7 @@ This module contains functions for working with a users input
 '''
 def sum_or_concat():
     '''
-    return sum or concat depends on velue type
+    return sum or concat depends on value type
     '''
     values = []
     while len(values) < 2:
